@@ -5,12 +5,7 @@
         private $year;
         private $sex;
 
-        public function growsOlder()
-        {
-            $this->year ++; 
-        }
-
-        public function __construct(
+         public function __construct(
             $n, 
             $y, 
             $s){
@@ -18,8 +13,12 @@
             $this -> year = $y;
             $this -> sex = $s;
         }
-    
-        
+
+        public function growsOlder()
+        {
+            $this->year ++; 
+        }
+ 
         public function getName()
         {
             return $this->name;

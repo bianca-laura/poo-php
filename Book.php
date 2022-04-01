@@ -10,13 +10,6 @@
         private $open;
         private $reader;
 
-        public function details ()
-        {
-            echo "The book {$this->getTitle()}, written by author {$this->getAuthor()}, have {$this->getTotalPages()} ";
-            echo "Total Pages, the curret Page is {$this->getCurrentPages()}, it is {$this->getOpen()},";
-            echo "And the reader is ". $this->getReader()->getName();
-        }
-
         public function __construct (
             $t,
             $a,
@@ -29,6 +22,15 @@
                 $this -> currentPages = 0;
                 $this -> open = false;
         }
+
+        public function details ()
+        {
+            echo "The book {$this->getTitle()}, written by author {$this->getAuthor()}, have {$this->getTotalPages()} ";
+            echo "Total Pages, the curret Page is {$this->getCurrentPages()}, it is {$this->getOpen()},";
+            echo "And the reader is ". $this->getReader()->getName();
+        }
+
+       
 
         public function getTitle()
         {
