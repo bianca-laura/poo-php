@@ -14,6 +14,8 @@
             require_once "ControleRemoto.php";
             require_once "Lutador.php";
             require_once "Luta.php";
+            require_once "Person.php";
+            require_once "Book.php";
 
             //$c1 = new Caneta;
             //$c1 -> destampar();
@@ -49,7 +51,7 @@
 
             //var_dump($conta1);
             var_dump($conta2); */
-            $lutadores = array();
+          /*  $lutadores = array();
             $lutadores[0] = new Lutador("Anderson Silva", "Brasil", 1.75, 25, 5, 3, 2);
             $lutadores[1] = new Lutador("Minotauro", "EUA", 1.80, 28, 5, 3, 2);
             $lutadores[2] = new Lutador("Vitor bel ford", "Mexico", 1.90, 28, 5, 5, 6);
@@ -62,7 +64,18 @@
             $luta1 -> marcarLuta($lutadores[0], $lutadores[2]);
             $luta1 -> lutar();
             $lutadores[0] -> status();
-            $lutadores[2] -> status();
+            $lutadores[2] -> status(); */
+
+            $person1 = new Person("Bianca", 25, "F");
+            $book1 = new Book("The Bible", "Jesus", 1662, $person1);
+            
+            $book1 -> open();
+            $book1-> details();
+
+
+            
+
+
 
 
             
