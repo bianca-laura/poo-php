@@ -32,7 +32,7 @@
 
         public function getTitle()
         {
-            return $this -> title;
+            return $this->title;
         }
 
         public function setTitle($t)
@@ -42,58 +42,58 @@
 
         public function getAuthor()
         {
-            return $this -> author;
+            return $this->author;
         }
 
         public function setAuthor($a)
         {
-            $this -> author = $a;
+            $this->author = $a;
         }
 
         public function getTotalPages()
         {
-            return $this -> totalPages;
+            return $this->totalPages;
         }
 
         public function setTotalPages($p)
         {
-            $this -> totalPages = $p;
+            $this->totalPages = $p;
         }
 
         public function getCurrentPages()
         {
-            return $this -> currentPages;
+            return $this->currentPages;
         }
 
         public function setCurrentPages($c)
         {
-            $this -> currentPages = $c;
+            $this->currentPages = $c;
         }
 
         public function getOpen()
         {
-            return $this -> open;
+            return $this->open;
             
         }
 
         public function setOpen($o)
         {
-            $this -> open = $p;
+            $this->open = $p;
         }
 
         public function getReader()
         {
-            return $this -> reader;
+            return $this->reader;
         }
 
         public function setReader($r)
         {
-            $this -> reader = $r;
+            $this->reader = $r;
         }
 
         public function open()
         {
-            $this -> open = true;
+            $this->open = true;
         }
 
         public function close()
@@ -105,18 +105,19 @@
         {
             if($p > $this->totalPages){
                 $this->currentPages = 0;
-            } else {
-                $this->currentPages = $p;
+                return;
             }
+            $this->currentPages = $p;
         }
 
         public function nextPages()
         {
             if($p > $this->totalPages){
                 $this->currentPages = 0;
-            } else {
-                $this -> currentPages ++;
-            }
+                return;
+            } 
+            $this -> currentPages ++;
+            
             
         }
 
@@ -124,9 +125,10 @@
         {
             if($p > $this->totalPages){
                 $this->currentPages = 0;
-            } else {
-                $this -> currentPages --;
+                return;
             }
+            $this->currentPages --;
+            
         }
 
     }

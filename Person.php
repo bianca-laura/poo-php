@@ -7,7 +7,7 @@
 
         public function growsOlder()
         {
-            $this -> year ++; 
+            $this->year ++; 
         }
 
         public function __construct(
@@ -22,36 +22,32 @@
         
         public function getName()
         {
-            return $this -> name;
+            return $this->name;
         }
 
         public function setName($n)
         {
-            $this -> name = $n;
+            $this->name = $n;
         }
 
         public function getYear()
         {
-            return $this -> year;
+            return $this->year;
         }
 
         public function setYear($y)
         {
-            $this -> year = $y;
+            $this->year = $y;
         }
 
         public function getSex()
         {
-            return $this -> sex;
+            return $this->sex;
         }
 
         public function setSex($s)
         {
-            $this -> sex = $s;
+            $this->sex = $s;
         }
-
-
-
-
     }
 ?>
