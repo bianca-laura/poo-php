@@ -1,0 +1,16 @@
+{
+    "name": "biancalaura/composer-php",
+    "description": "aprendendo composer",
+    "autoload": {
+        "psr-4": {
+            "Biancalaura\\ComposerPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bianca laura",
+            "email": "biancalaura.rosa@gmail.com"
+        }
+    ],
+    "require": {}
+}

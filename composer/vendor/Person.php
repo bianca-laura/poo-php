@@ -9,9 +9,9 @@
             $n, 
             $y, 
             $s){
-            $this -> name = $n;
-            $this -> year = $y;
-            $this -> sex = $s;
+            $this->name = $n;
+            $this->year = $y;
+            $this->sex = $s;
         }
 
         public function growsOlder()

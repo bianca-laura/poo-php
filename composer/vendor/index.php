@@ -9,14 +9,7 @@
 <body>
     <pre>
         <?php
-            require_once "Caneta.php";
-            require_once "ContaBanco.php";
-            require_once "ControleRemoto.php";
-            require_once "Lutador.php";
-            require_once "Luta.php";
-            require_once "Person.php";
-            require_once "Book.php";
-
+        require './vendor/autoload.php';
             //$c1 = new Caneta;
             //$c1 -> destampar();
             //$c1 -> rabiscar();
@@ -69,8 +62,8 @@
             $person1 = new Person("Bianca", 25, "F");
             $book1 = new Book("The Bible", "Jesus", 1662, $person1);
             
-            $book1 -> open();
-            $book1-> details();
+            $book1 ->open();
+            $book1->details();
 
 
             
