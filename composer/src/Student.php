@@ -1,5 +1,6 @@
 <?php
-    class Student
+namespace Biancalaura\ComposerPhp;
+    class Student extends Person
     {
         private $registration;
         private $course;
@@ -9,10 +10,22 @@
 
         }
 
+        public function details(){
+            return $this->getName().', com a matricula no curso de '. $this->getCourse().
+            ' tem o numero de matricula '. $this->getRegistration(). ', tem a idade de '. $this->getYear().
+            ' e é do sexo '. $this->getSex();
+        }
+
         public function cancelRegistration()
         {
-
+            echo '<p> Matricula será cancelada </p>';
         }
+
+        public function payMonthly()
+        {
+            return 'Pagando mensalidade do aluno '. $this->getName();
+        }
+
 
         public function getRegistration()
         {
@@ -31,7 +44,7 @@
 
         public function setCourse($c)
         {
-            $this->registration = $c;
+            $this->course = $c;
         }
 
         

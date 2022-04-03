@@ -1,5 +1,6 @@
 <?php
-    class Person
+namespace Biancalaura\ComposerPhp;
+    abstract class Person
     {
         private $name;
         private $year;
@@ -12,11 +13,6 @@
             $this->name = $n;
             $this->year = $y;
             $this->sex = $s;
-        }
-
-        public function growsOlder()
-        {
-            $this->year ++; 
         }
  
         public function getName()
@@ -47,6 +43,11 @@
         public function setSex($s)
         {
             $this->sex = $s;
+        }
+
+        public final function growsOlder()
+        {
+            $this->year ++; 
         }
     }
 ?>
