@@ -5,6 +5,7 @@ namespace Biancalaura\ComposerPhp;
         private $name;
         private $year;
         private $sex;
+        private $experience;
 
          public function __construct(
             $n, 
@@ -13,8 +14,14 @@ namespace Biancalaura\ComposerPhp;
             $this->name = $n;
             $this->year = $y;
             $this->sex = $s;
+            $this->experience = 0;
         }
  
+        public function gainExp($n)
+        {
+            $this->experience += $n;
+        }
+
         public function getName()
         {
             return $this->name;

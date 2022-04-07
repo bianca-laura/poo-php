@@ -17,7 +17,91 @@
         use Biancalaura\ComposerPhp\Visitor;
         use Biancalaura\ComposerPhp\Officer;
         use Biancalaura\ComposerPhp\Fellow;
+        use Biancalaura\ComposerPhp\Mammal;
+        use Biancalaura\ComposerPhp\Reptile;
+        use Biancalaura\ComposerPhp\Fish;
+        use Biancalaura\ComposerPhp\Poultry;
+        use Biancalaura\ComposerPhp\Wolf;
+        use Biancalaura\ComposerPhp\Dog;
+        use Biancalaura\ComposerPhp\Video;
+        use Biancalaura\ComposerPhp\Gafanhotos;
+        use Biancalaura\ComposerPhp\Views;
+        
+        //use Biancalaura\ComposerPhp\ActionVideoInterfase;
 
+
+        $v[0] = new Video("Curso Poo");
+        $v[1] = new Video("Curso Php");
+        $v[2] = new Video("Curso de Java Script");
+
+        $g[0] = new Gafanhotos("Bianca", 25, "F", "BiancaLaura");
+        $g[1] = new Gafanhotos("Jhonatan", 28, "M", "JhowQueiroz");
+        $g[2] = new Gafanhotos("Hellena", 3, "F", "HellenaSophy");
+
+        print_r($g);
+        print_r($v);
+
+        $views = new Views($g[0], $v[0]);
+        $views2 = new Views($g[0], $v[0]);
+       $views3 = new Views($g[0], $v[0]);
+        $views3 = new Views($g[0], $v[0]);
+
+
+        //$views->evaluate();
+       $views2->evaluateNote(10);
+        $views3->evaluatePercent(99);
+       $views3->evaluatePercent(99);
+       $views3->evaluatePercent(99);
+        
+
+        print_r($v);
+        print_r($g);
+
+
+       // print_r($views);
+
+        /*$d = new Dog(5, 1.5, "Lolla", "Cachorro");
+        $w = new Wolf(10, 2, "Lobinho", "Lobo");
+
+        echo '<p> o cachorro faz '. $d->talking(). '</p>';
+        echo '<p>'. $d->reactPhrase('Olá');
+        echo '<p>'. $d->reactPhrase('Vai deitar');
+        echo '<p>'. $d->reactHour(7,50);
+        echo '<p>'. $d->reactHour(20,30);
+        echo '<p>'. $d->reactHour(14,5);
+        echo '<p>'. $d->reactOwner(true);
+        echo '<p>'. $d->reactYears(2,11);
+
+        echo '<p> o lobo faz '. $w->talking(). '</p>'; */
+
+
+        /* $m = new Mammal(10, 1.5, "Lolla", "Cachorro");
+        echo $m->getName(). ' Da especie '. $m->getSpecies(). ' tem '. $m->getYears(). 'Anos de idade';
+        echo ' e '. $m->getWeight(). 'Kg';
+        echo '<p> como um ele se locomove? '. $m->walking(); '<p>'; 
+        echo '<p> como um ele se alimenta ? '. $m->eat(). '<p>'; 
+        echo '<p> como ele fala? '. $m->talking(). '<p>'; 
+
+        $r = new Reptile(3, 4, "Rap", "Largato");
+        echo $r->getName(). ' Da especie '. $r->getSpecies(). ' tem '. $r->getYears(). 'Anos de idade';
+        echo ' e '. $r->getWeight(). 'Kg';
+        echo '<p> como um ele se locomove? '. $r->walking(); '<p>'; 
+        echo '<p> como um ele se alimenta ? '. $r->eat(). '<p>'; 
+        echo '<p> como ele fala? '. $r->talking(). '<p>'; 
+
+        $f = new Fish(1, 1, "Nemo", "Peixinho dourado");
+        echo $f->getName(). ' Da especie '. $f->getSpecies(). ' tem '. $f->getYears(). 'Anos de idade';
+        echo ' e '. $f->getWeight(). 'Kg';
+        echo '<p> como um ele se locomove? '. $f->walking(); '<p>'; 
+        echo '<p> como um ele se alimenta ? '. $f->eat(). '<p>'; 
+        echo '<p> como ele fala? '. $f->talking(). '<p>'; 
+
+        $p = new Poultry(1.5, 1, "Blue", "Piriquito");
+        echo $p->getName(). ' Da especie '. $p->getSpecies(). ' tem '. $p->getYears(). 'Anos de idade';
+        echo ' e '. $p->getWeight(). 'Kg';
+        echo '<p> como um ele se locomove? '. $p->walking(); '<p>'; 
+        echo '<p> como um ele se alimenta ? '. $p->eat(). '<p>'; 
+        echo '<p> como ele fala? '. $p->talking(). '<p>';  */
     
             // aprendendo a criar classes
 
@@ -82,7 +166,7 @@
 
             // herança
 
-            $p1 = new Student("Bianca Laura", 25, "F");
+            /* $p1 = new Student("Bianca Laura", 25, "F");
             $p2 = new Teacher("Leandro Anderson", 29, "M");
             //$p3 = new Officer("Jhonatan Queiroz", 29, "M");
             $p3 = new Visitor("Jhonatan Queiroz", 29, "M");
@@ -105,7 +189,7 @@
 
             //echo $p3->details(). '<br />';
 
-            //var_dump($p3);
+            //var_dump($p3); */
          
 
 
